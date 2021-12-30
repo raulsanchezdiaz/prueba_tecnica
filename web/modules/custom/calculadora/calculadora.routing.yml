@@ -1,0 +1,11 @@
+calculadora.get.value:
+  path: 'calcular/{operation}/{operatorA}/{operatorB}'
+  defaults:
+    _controller: '\Drupal\calculadora\Controller\CalculadoraController::excOperacion'
+    _title: ''
+  requirements:
+    _permission: 'access content'
+  methods: ['GET']
+  no_cache: 'TRUE'
+
+
